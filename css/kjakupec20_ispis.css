@@ -1,0 +1,43 @@
+@media print {
+nav{
+    visibility: hidden;
+}
+header{
+    visibility: hidden;
+}
+footer{
+    visibility: hidden;
+}
+
+*{
+    filter: grayscale(100%);
+}
+
+form#prvi_dio{
+    position: absolute; 
+    top: 170px ;
+    left: 2%;
+    width: 500px;
+}
+
+form#drugi_dio{
+    position: absolute;
+    top: 170px;
+    left: 72%;
+}
+
+#apsolutno{
+    visibility: hidden;
+}
+
+#video{
+    visibility: hidden;
+}
+#audio{
+    visibility: hidden;
+}
+#slike_max{
+    width: max-content;
+}
+
+}

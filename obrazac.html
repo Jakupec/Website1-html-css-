@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta name="author" content="Karlo Jakupec">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="opis" content="nav, main, a">
+        <title>obrazac</title>
+        <link href="css/kjakupec20.css" rel="stylesheet" type="text/css">
+        <link href="css/kjakupec20_responzivni_dizajn.css" rel="stylesheet" type="text/css">
+        <link href="css/kjakupec20_ispis.css" media="print" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header id="zaglavlje">
+            <a href="index.html">
+                <img src="materijali/logo.png" alt="foi_logo" width="50"/>
+            </a>
+            <noscript>Vaš Web preglednik ne podržava
+                JavaScript!</noscript>
+            <h1>Obrazac</h1>
+        </header>
+        <nav  id="centralno">
+            <a href="index.html" id="miš_iznad">
+                Početna &nbsp;
+            </a>
+            <a href="ostalo/o_autoru.html" id="miš_iznad">
+                Autor &nbsp; 
+            </a>
+            <a href="obrazac.html" id="miš_iznad">
+                Obrazac &nbsp;
+            </a>
+            <a href="ostalo/multimedija.html" id="miš_iznad">
+               Multimedija  &nbsp;
+            </a>
+            <a href="podaci/popis.html" id="miš_iznad">
+                Popis &nbsp;
+            </a>
+            <a href="ostalo/kreativna.html" id="miš_iznad">
+                Kreativna &nbsp;
+            </a>
+        </nav>
+        <main>
+            
+            <form id="prvi_dio" method="post" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php">
+            <fieldset>
+                <legend>Podaci o klubu</legend>
+                <label for="nogometni_klub">Nogometni klub:</label>
+                <input type="text" name="nogometni_klub" id="nogometni_klub" required><br>
+                <textarea name="opis_nogometnog_kluba" rows="10" cols="40" maxlength="1000" placeholder="Kratki opis nogometnog kluba"></textarea><br>
+                <label for="vrsta_utakmice">Odaberite vrstu nogometnog natjecanja koju najviše voliš gledati:</label>
+                <input type="radio" value="Liga_prvaka" checked name="vrsta_utakmice"> Liga Prvaka
+                <input type="radio" value="Prvenstvo" name="vrsta_utakmice"> Prvenstvo
+                <input type="radio" value="Kup" name="vrsta_utakmice"> Kup
+                <input type="radio" value="Liga_nacija" name="vrsta_utakmice"> Liga nacija
+                <input type="radio" value="Svjetsko_prvenstvo" name="vrsta_utakmice"> Svjetsko prvenstvo
+                <input type="radio" value="Europsko_prvenstvo" name="vrsta_utakmice"> Europsko prvenstvo
+                <br>
+                <label for="brojevi_golova">Brojevi golova kluba ove sezone:</label>
+                <input type="number" name="brojevi_golova" id="brojevi_golova" min="0" max="100"
+                value="1" required><br>
+
+                <label for="igrac">Odaberi najdražeg igrača iz ponuđenih klubova:</label>
+                <select id="igrac" multiple size="4">
+                    <option value="-1" selected>Odaberite igrača</option>
+                    <optgroup label=" Real Madrid">
+                        <option value="0">Modrić</option>
+                        <option value="1">Benzema</option>
+                    </optgroup>
+                    <optgroup label="Barcelona">
+                        <option value="2">De Jong</option>
+                        <option value="3">Pique</option>
+                        <option value="4">Pedri</option>
+                        <option value="5">Gavi</option>
+                        <option value="6">Ansu Fati</option>
+                    </optgroup>
+                </select><br>
+                <label for="dat_vri">Datum i vrijeme igranja sljedeće utakmice:</label>
+                <input type="datetime-local" id="dat_vri" name="dat_vri"><br>
+                <label for="boja">Boja dresova:</label>
+                <input type="color" name="boja" id="boja"><br>
+            </form>
+            </fieldset>
+            <form id="drugi_dio" method="post" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php">
+                <fieldset>
+                    <legend>Podaci o korisniku</legend>
+                <label for="mail">Unesite svoj email:</label>
+                <input type="email" name="mail" id="mail" placeholder="ime.prezime@gmail.com"><br>
+                <label for="lozinka">Unesite lozinku:</label>
+                <input type="password" name="lozinka" id="lozinka"><br>
+                <label for="telefon">Unesite svoj broj telefona:</label>
+                <input type="tel" name="telefon" id="telefon" placeholder="+385 98 225 4377 "><br>
+            </fieldset>
+             </form method="post" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php">
+             <form id="apsolutno" class="apsolutno480">
+                <input type="reset" id="restart" name="restart" value="Resetiranje podataka"><br>
+                <input type="submit" id="slanje" name="slanje" value="Pošalji podatke"><br>
+
+             </form>
+        </main>
+        <footer class="apsolutno">
+            <a href="https://creativecommons.org/licenses/by/2.0/">
+                <img  src="materijali/ccby.png"  alt="ccby" width="120" />
+            </a>
+            &copy;
+            <a href="mailto:kjakupec20@foi.hr">Karlo Jakupec</a>
+            2022.
+            <a href="http://validator.w3.org/check?uri=%7Buri%7D">
+                <img src="materijali/HTML5.png" alt="html5_logo" width="30"/>
+            </a>
+            <a href="#zaglavlje">
+                <img src="materijali/strelica.png" alt="strelica" width="30" /> 
+            </a>
+        </footer>
+    </body>
+
+</html>
+
+

@@ -1,0 +1,100 @@
+* {background:lightskyblue ;}
+h1 {background-color:darkred ; font-family: Trebuchet MS; text-align: center; color: lightskyblue; }
+main {font-family: 'Gill Sans MT';}
+#centralno { text-align: center;}
+.pozadina_teksta {background-color: lightseagreen;}
+figcaption.boja {color:darkgreen; font-weight: bold;}
+tr > td {color: darkblue;}
+table caption {background-color: black; color: yellow;}
+form~form {text-align: center; font-weight: bold; }
+nav+main{color: darkred;}
+#miš_iznad:hover {background-color: azure; font-weight: bold; }
+.miš_iznad2:hover {width: 300px; height: 300px;}
+
+[id="treba_obojat_pozadinu"]>td{background-color: lightcoral;}
+tr:hover{font-weight: bold;}
+
+
+#slika{
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+    margin: 5px;
+    padding: 5px;
+}
+
+#slika2{
+    width:500px;
+    height:300px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: darkgoldenrod;
+    margin: 10px;
+    padding: 20px;
+}
+
+.resetka{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.spoji{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.relativna_pozicija{
+    position: relative; float: right;
+}
+
+
+
+.fiksna_pozicija{
+    position: fixed; top: 20px; left: 1%;
+}
+
+.prelijevanje{
+    overflow: scroll;
+}
+
+.visina_sirina{
+    width: 200px;
+    height: 200px;
+}
+
+td{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+table {
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+form#prvi_dio{
+    position: fixed;
+}
+
+form#drugi_dio{
+    position: fixed;
+    top: 170px;
+    left: 70%;
+}
+
+#apsolutno{
+    position:fixed; 
+    top: 600px;
+    left: 1%;
+}
+
+.apsolutno{
+    position: absolute; 
+    top: 650px;
+    left: 1%;
+} 
